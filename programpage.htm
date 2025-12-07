@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Program – ITrainingQuest</title>
+
+<style>
+    /* ===== EXISTING STYLES UNTOUCHED ===== */
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Georgia',serif;background:#faf6f7;color:#4c3282;overflow-x:hidden;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+
+    .nav{background:#3b2f4a;padding:18px 40px;display:flex;justify-content:space-between;align-items:center;color:white;font-size:20px;letter-spacing:1px;position:sticky;top:0;z-index:1000}
+    .nav a{color:#d9bddb;margin-left:30px;font-size:18px;transition:.3s}.nav a:hover{color:white}
+
+    .about{padding:80px 10%;display:flex;justify-content:center;align-items:center;min-height:80vh}
+    .glass-card{background:rgba(255,255,255,0.25);border-radius:24px;box-shadow:0 8px 32px rgba(31,38,135,0.37);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.18);max-width:900px;padding:60px 50px;position:relative;overflow:hidden}
+    .glass-card::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(255,255,255,0.4) 0%,transparent 60%);animation:rotate 20s linear infinite;z-index:-1}
+    @keyframes rotate{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+    .glass-card h1{font-size:48px;margin-bottom:30px;text-align:center;color:#3b2f4a}
+    .glass-card h2{font-size:28px;margin:30px 0 10px;color:#450693}
+    .glass-card p{font-size:18px;margin-bottom:15px;text-align:justify;color:#4c3282}
+    .highlight{color:#450693;font-weight:bold}
+
+    /* ===== RESPONSIVE ADDITIONS ===== */
+
+    /* Mobile: 360×430 */
+    @media (max-width: 430px) {
+        .nav{padding:12px 20px;font-size:18px}
+        .nav a{margin-left:12px;font-size:14px}
+        .about{padding:40px 5%}
+        .glass-card{max-width:100%;padding:30px 20px}
+        .glass-card h1{font-size:28px;margin-bottom:20px}
+        .glass-card h2{font-size:22px;margin:20px 0 8px}
+        .glass-card p{font-size:15px;text-align:left}
+    }
+
+    /* Tablet: 1024×768 */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .about{padding:60px 8%}
+        .glass-card{max-width:800px;padding:50px 35px}
+        .glass-card h1{font-size:40px}
+        .glass-card h2{font-size:26px}
+        .glass-card p{font-size:17px}
+    }
+
+    /* Desktop: 1920×1080 */
+    @media (min-width: 1920px) {
+        .about{padding:100px 15%}
+        .glass-card{max-width:1100px;padding:80px 70px}
+        .glass-card h1{font-size:60px;margin-bottom:40px}
+        .glass-card h2{font-size:34px;margin:40px 0 15px}
+        .glass-card p{font-size:21px;margin-bottom:20px}
+    }
+</style>
+</head>
+
+<body>
+<nav class="nav">
+    <div class="logo">ITrainingQuest</div>
+    <div>
+        <a href="page1.htm">Home</a>
+        <a href="page2.htm">Subject</a>
+        <a href="programpage.htm">Program</a>
+        <a href="page4.htm">Research</a>
+        <a href="page5.htm">About</a>
+    </div>
+</nav>
+
+<section class="about">
+    <div class="glass-card">
+        <h1><span class="highlight">Program</span></h1>
+
+        <h2>BSIT (Bachelor of Science in Information Technology)</h2>
+        <p>
+            The Bachelor of Science in Information Technology (BSIT) is a program focused on the practical use of technology to support and improve business operations. It trains students to manage networks, maintain IT infrastructures, develop basic software solutions, secure systems, and provide technical support across various industries. BSIT emphasizes hands-on learning, allowing students to work with real systems and tools used in organizations. Graduates are equipped to become IT specialists, system administrators, network technicians, and other professionals who ensure that technology in an organization runs smoothly and efficiently.
+        </p>
+
+        <h2>BSCS (Bachelor of Science in Computer Science)</h2>
+        <p>
+            The Bachelor of Science in Computer Science (BSCS) is a program centered on computing theory, complex programming, and software development. It focuses on algorithms, data structures, artificial intelligence, and the design of computer systems, preparing students to solve advanced computational problems. BSCS emphasizes analytical thinking and innovation, enabling students to build new technologies, develop software from scratch, and explore advanced areas like machine learning and system design. Graduates are prepared for careers as software engineers, programmers, data scientists, researchers, and technology developers.
+        </p>
+    </div>
+</section>
+</body>
+</html>

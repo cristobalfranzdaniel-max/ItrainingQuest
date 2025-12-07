@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITrainingQuest – About</title>
+
+<style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Georgia',serif;background:#faf6f7;color:#4c3282;overflow-x:hidden;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+
+    /* ----------  NAVBAR  ---------- */
+    .nav{background:#3b2f4a;padding:18px 40px;display:flex;justify-content:space-between;align-items:center;color:white;font-size:20px;letter-spacing:1px;position:sticky;top:0;z-index:1000}
+    .nav a{color:#d9bddb;margin-left:30px;font-size:18px;transition:.3s}.nav a:hover{color:white}
+
+    /* ----------  ABOUT SECTION  ---------- */
+    .about{padding:80px 10%;display:flex;justify-content:center;align-items:center;min-height:80vh}
+    .glass-card{background:rgba(255,255,255,0.25);border-radius:24px;box-shadow:0 8px 32px rgba(31,38,135,0.37);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.18);max-width:900px;padding:60px 50px;position:relative;overflow:hidden}
+    .glass-card::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(255,255,255,0.4) 0%,transparent 60%);animation:rotate 20s linear infinite;z-index:-1}
+    @keyframes rotate{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+    .about h1{font-size:48px;margin-bottom:30px;text-align:center;color:#3b2f4a}
+    .about p{font-size:20px;margin-bottom:20px;text-align:justify;color:#4c3282}
+    .highlight{color:#450693;font-weight:bold}
+
+    /* ----------  DISCORD SECTION  ---------- */
+    .discord-section{padding:80px 10%;animation:fadeIn 1.3s ease-out forwards;opacity:0}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+    .discord-container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+    .discord-left{max-width:50%}
+    .discord-title{font-size:80px;color:#4c3282;font-weight:700;text-shadow:4px 4px 8px #cab8ff}
+    .discord-subtitle{font-size:32px;color:#4c3282;font-style:italic;margin-top:-15px}
+    .discord-btn{display:inline-block;margin-top:40px;padding:18px 40px;background:#450693;color:white;font-size:26px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 0 18px #7b87ff;transition:0.3s;animation:glow 2s infinite ease-in-out}
+    @keyframes glow{0%{box-shadow:0 0 12px #540863}50%{box-shadow:0 0 28px #540863}100%{box-shadow:0 0 12px #540863}}
+    .discord-btn:hover{transform:scale(1.07)}
+    .discord-badge{width:420px;animation:float 4s ease-in-out infinite}
+    @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-18px)}100%{transform:translateY(0)}}
+
+    @media (max-width: 900px) {
+        .discord-container{flex-direction:column;text-align:center}
+        .discord-left{max-width:100%}
+        .discord-badge{width:300px;margin-top:40px}
+        .discord-title{font-size:60px}
+    }
+
+    /* ===== RESPONSIVE INJECTIONS (NEW) ===== */
+
+    /* Mobile: 360×430 */
+    @media (max-width: 430px) {
+        .nav{padding:12px 20px;font-size:18px}
+        .nav a{margin-left:12px;font-size:14px}
+        .about{padding:40px 5%}
+        .glass-card{max-width:100%;padding:30px 20px}
+        .about h1{font-size:28px;margin-bottom:20px}
+        .about p{font-size:15px;text-align:left}
+        .discord-section{padding:40px 5%}
+        .discord-container{flex-direction:column;text-align:center}
+        .discord-left{max-width:100%}
+        .discord-title{font-size:36px}
+        .discord-subtitle{font-size:18px;margin-top:-8px}
+        .discord-btn{padding:14px 30px;font-size:20px;margin-top:30px}
+        .discord-badge{width:240px;margin-top:30px}
+    }
+
+    /* Tablet: 1024×768 */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .about{padding:60px 8%}
+        .glass-card{max-width:800px;padding:50px 35px}
+        .about h1{font-size:40px}
+        .about p{font-size:17px}
+        .discord-section{padding:60px 8%}
+        .discord-left{max-width:55%}
+        .discord-title{font-size:60px}
+        .discord-subtitle{font-size:26px}
+        .discord-btn{padding:16px 35px;font-size:22px}
+        .discord-badge{width:340px}
+    }
+
+    /* Desktop: 1920×1080 */
+    @media (min-width: 1920px) {
+        .about{padding:100px 15%}
+        .glass-card{max-width:1100px;padding:80px 70px}
+        .about h1{font-size:60px;margin-bottom:40px}
+        .about p{font-size:22px;margin-bottom:25px}
+        .discord-section{padding:100px 15%}
+        .discord-left{max-width:45%}
+        .discord-title{font-size:100px}
+        .discord-subtitle{font-size:38px;margin-top:-20px}
+        .discord-btn{padding:22px 50px;font-size:30px;margin-top:50px}
+        .discord-badge{width:480px}
+    }
+</style>
+</head>
+
+<body>
+<nav class="nav">
+    <div class="logo">ITrainingQuest</div>
+    <div>
+        <a href="page1.htm">Home</a>
+        <a href="page2.htm">Subject</a>
+        <a href="programpage.htm">Program</a>
+        <a href="page4.htm">Research</a>
+        <a href="page5.htm">About</a>
+    </div>
+</nav>
+
+<section class="about">
+    <div class="glass-card">
+        <h1>About <span class="highlight">iTrainingQuest</span></h1>
+        <p>
+            <span class="highlight">iTrainingQuest</span> is a learning hub created to help students, beginners, and anyone interested in technology develop a strong understanding of IT fundamentals in an engaging and approachable way. This platform was developed by first-year IT college students who understand the challenges of starting out in the field. Drawing from their own experiences and insights, they designed a resource that is both informative and relatable.
+        </p>
+        <p>
+            <span class="highlight">iTrainingQuest</span> uses a hands-on, game-like learning style that transforms lessons into interactive activities. This approach encourages learners to explore concepts, apply their knowledge, and stay actively involved throughout the learning process. By presenting information in a practical and interactive format, the platform makes IT education more accessible and less intimidating.
+        </p>
+    </div>
+</section>
+
+<section class="discord-section">
+    <div class="discord-container">
+        <div class="discord-left">
+            <div class="discord-title">Join Our Discord</div>
+            <div class="discord-subtitle">Be part of the learning adventure!</div>
+            <a class="discord-btn" href="https://discord.gg/VJZGEVQMMu" target="_blank">Join the Server</a>
+        </div>
+        <!-- inside <img> -->
+<img src="assets/images/dog_logo.png" alt="Wolf Badge" class="badge">
+</section>
+</body>
+</html>

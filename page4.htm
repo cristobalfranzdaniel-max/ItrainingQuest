@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITrainingQuest – Compiled Activities</title>
+
+<style>
+    /* ===== EXISTING STYLES UNTOUCHED ===== */
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Georgia',serif;background:#faf6f7;overflow-x:hidden;color:#4c3282}
+    a{text-decoration:none;color:inherit}
+
+    .nav{background:#3b2f4a;padding:18px 40px;display:flex;justify-content:space-between;align-items:center;color:white;font-size:20px;letter-spacing:1px}
+    .nav a{color:#d9bddb;margin-left:30px;font-size:18px;transition:.3s}.nav a:hover{color:white}
+
+    .research-wrap{padding:80px 10%;animation:fadeIn 1.3s ease-out forwards;opacity:0}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+    h1.research-title{font-size:60px;font-weight:700;text-shadow:4px 4px 8px #cab8ff;margin-bottom:40px;text-align:center}
+
+    .cards{display:flex;gap:30px;flex-wrap:wrap;justify-content:center}
+    .card{background:white;border-radius:20px;padding:25px;width:320px;box-shadow:0 8px 20px rgba(0,0,0,.08);transition:.3s;text-align:center}
+    .card:hover{transform:translateY(-8px)}
+    .card img{width:120px;height:120px;object-fit:cover;border-radius:50%;margin:0 auto 15px;display:block;border:4px solid #cab8ff}
+    .card h3{margin-bottom:12px;font-size:22px;color:#450693}
+    .card ul{list-style:none;padding:0;margin-top:10px;columns:2;column-gap:20px}
+    .card li{margin:4px 0;font-size:15px}
+    .card a{color:#6b2fc7;font-weight:600}.card a:hover{text-decoration:underline}
+
+    .badge{width:320px;display:block;margin:50px auto 0;animation:float 4s ease-in-out infinite}
+    @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-18px)}100%{transform:translateY(0)}}
+
+    .dog{position:fixed;bottom:30px;left:-120px;width:100px;height:100px;background:url("myDog.gif") no-repeat center/cover;animation:run 12s linear infinite;z-index:10}
+    @keyframes run{to{left:calc(100vw + 120px)}}
+
+    @media(max-width:900px){.research-wrap{text-align:center}h1.research-title{font-size:48px}.badge{width:260px}.cards{flex-direction:column;align-items:center}}
+
+    /* ===== RESPONSIVE ADDITIONS ===== */
+
+    /* Mobile: 360×430 */
+    @media (max-width: 430px) {
+        .nav{padding:12px 20px;font-size:18px}
+        .nav a{margin-left:12px;font-size:14px}
+        .research-wrap{padding:40px 5%}
+        .research-title{font-size:32px;margin-bottom:30px}
+        .cards{flex-direction:column;align-items:center;gap:20px}
+        .card{width:100%;max-width:280px;padding:20px}
+        .card img{width:80px;height:80px;border-width:3px}
+        .card h3{font-size:18px}
+        .card ul{columns:1;margin-top:8px}
+        .card li{font-size:14px;margin:3px 0}
+        .badge{width:200px;margin-top:40px}
+        .dog{width:80px;height:80px;bottom:20px}
+    }
+
+    /* Tablet: 1024×768 */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .research-wrap{padding:60px 8%}
+        .research-title{font-size:48px}
+        .cards{gap:25px}
+        .card{width:280px;padding:22px}
+        .card img{width:100px;height:100px}
+        .card h3{font-size:20px}
+        .card ul{columns:2;column-gap:15px}
+        .card li{font-size:14px}
+        .badge{width:280px;margin-top:50px}
+        .dog{width:90px;height:90px;bottom:25px}
+    }
+
+    /* Desktop: 1920×1080 */
+    @media (min-width: 1920px) {
+        .research-wrap{padding:100px 15%}
+        .research-title{font-size:72px;margin-bottom:60px}
+        .cards{gap:40px}
+        .card{width:380px;padding:35px}
+        .card img{width:140px;height:140px;border-width:5px}
+        .card h3{font-size:26px}
+        .card ul{column-gap:25px}
+        .card li{font-size:16px;margin:5px 0}
+        .badge{width:380px;margin-top:70px}
+        .dog{width:120px;height:120px;bottom:40px}
+    }
+</style>
+</head>
+
+<body>
+
+
+<nav class="nav">
+    <div class="logo">ITrainingQuest</div>
+    <div>
+        <a href="page1.htm">Home</a>
+        <a href="page2.htm">Subject</a>
+        <a href="programpage.htm">Program</a>
+        <a href="research.html">Research</a>
+        <a href="page5.htm">About</a>
+    </div>
+</nav>
+
+<div class="research-wrap">
+    <h1 class="research-title">Compiled Activities</h1>
+
+    <div class="cards">
+        <!-- Gwyneth -->
+        <div class="card">
+            <img src="assets/Activities/Gwyneth/Gwyneth.jpg" alt="Gwyneth Coronado">
+            <h3>Gwyneth Coronado</h3>
+            <ul>
+                <li><a href="assets/Gwyneth_Act1.pdf" target="_blank">Act 1</a></li>
+                <li><a href="assets/Gwyneth_Act2.pdf" target="_blank">Act 2</a></li>
+                <li><a href="assets/Gwyneth_Act3.pdf" target="_blank">Act 3</a></li>
+                <li><a href="assets/Gwyneth_Act4.pdf" target="_blank">Act 4</a></li>
+                <li><a href="assets/Gwyneth_Act5.pdf" target="_blank">Act 5</a></li>
+                <li><a href="assets/Gwyneth_Act6.pdf" target="_blank">Act 6</a></li>
+                <li><a href="assets/Gwyneth_Act7.pdf" target="_blank">Act 7</a></li>
+                <li><a href="assets/Gwyneth_Act8.pdf" target="_blank">Act 8</a></li>
+                <li><a href="assets/Gwyneth_Act9.pdf" target="_blank">Act 9</a></li>
+                <li><a href="assets/Gwyneth_Act10.pdf" target="_blank">Act 10</a></li>
+                <li><a href="assets/Gwyneth_Act11.pdf" target="_blank">Act 11</a></li>
+            </ul>
+        </div>
+
+        <!-- Karen -->
+        <div class="card">
+            <img src="assets/Activities/Karen/Karen.jpg" alt="Karen Cos">
+            <h3>Karen Cos</h3>
+            <ul>
+                <li><a href="assets/Karen_Act1.pdf" target="_blank">Act 1</a></li>
+                <li><a href="assets/Karen_Act2.pdf" target="_blank">Act 2</a></li>
+                <li><a href="assets/Karen_Act3.pdf" target="_blank">Act 3</a></li>
+                <li><a href="assets/Karen_Act4.pdf" target="_blank">Act 4</a></li>
+                <li><a href="assets/Karen_Act5.pdf" target="_blank">Act 5</a></li>
+                <li><a href="assets/Karen_Act6.pdf" target="_blank">Act 6</a></li>
+                <li><a href="assets/Karen_Act7.pdf" target="_blank">Act 7</a></li>
+                <li><a href="assets/Karen_Act8.pdf" target="_blank">Act 8</a></li>
+                <li><a href="assets/Karen_Act9.pdf" target="_blank">Act 9</a></li>
+                <li><a href="assets/Karen_Act10.pdf" target="_blank">Act 10</a></li>
+                <li><a href="assets/Karen_Act11.pdf" target="_blank">Act 11</a></li>
+            </ul>
+        </div>
+
+        <!-- Franz -->
+        <div class="card">
+            <img src="assets/Activities/Franz/Franz.jpg" alt="Franz Cristobal">
+            <h3>Franz Cristobal</h3>
+            <ul>
+                <li><a href="assets/Franz_Act1.pdf" target="_blank">Act 1</a></li>
+                <li><a href="assets/Franz_Act2.pdf" target="_blank">Act 2</a></li>
+                <li><a href="assets/Franz_Act3.pdf" target="_blank">Act 3</a></li>
+                <li><a href="assets/Franz_Act4.pdf" target="_blank">Act 4</a></li>
+                <li><a href="assets/Franz_Act5.pdf" target="_blank">Act 5</a></li>
+                <li><a href="assets/Franz_Act6.pdf" target="_blank">Act 6</a></li>
+                <li><a href="assets/Franz_Act7.pdf" target="_blank">Act 7</a></li>
+                <li><a href="assets/Franz_Act8.pdf" target="_blank">Act 8</a></li>
+                <li><a href="assets/Franz_Act9.pdf" target="_blank">Act 9</a></li>
+                <li><a href="assets/Franz_Act10.pdf" target="_blank">Act 10</a></li>
+                <li><a href="assets/Franz_Act11.pdf" target="_blank">Act 11</a></li>
+            </ul>
+        </div>
+
+        <!-- Edrian -->
+        <div class="card">
+            <img src="assets/Activities/Edrian/Edrian.jpg" alt="Edrian Dagpin">
+            <h3>Edrian Dagpin</h3>
+            <ul>
+                <li><a href="assets/Edrian_Act1.pdf" target="_blank">Act 1</a></li>
+                <li><a href="assets/Edrian_Act2.pdf" target="_blank">Act 2</a></li>
+                <li><a href="assets/Edrian_Act3.pdf" target="_blank">Act 3</a></li>
+                <li><a href="assets/Edrian_Act4.pdf" target="_blank">Act 4</a></li>
+                <li><a href="assets/Edrian_Act5.pdf" target="_blank">Act 5</a></li>
+                <li><a href="assets/Edrian_Act6.pdf" target="_blank">Act 6</a></li>
+                <li><a href="assets/Edrian_Act7.pdf" target="_blank">Act 7</a></li>
+                <li><a href="assets/Edrian_Act8.pdf" target="_blank">Act 8</a></li>
+                <li><a href="assets/Edrian_Act9.pdf" target="_blank">Act 9</a></li>
+                <li><a href="assets/Edrian_Act10.pdf" target="_blank">Act 10</a></li>
+                <li><a href="assets/Edrian_Act11.pdf" target="_blank">Act 11</a></li>
+            </ul>
+        </div>
+
+        <!-- Keann -->
+        <div class="card">
+            <img src="assets/Activities/Keann/Keann.png" alt="Keann Dava">
+            <h3>Keann Dava</h3>
+            <ul>
+                <li><a href="assets/Keann_Act1.pdf" target="_blank">Act 1</a></li>
+                <li><a href="assets/Keann_Act2.pdf" target="_blank">Act 2</a></li>
+                <li><a href="assets/Keann_Act3.pdf" target="_blank">Act 3</a></li>
+                <li><a href="assets/Keann_Act4.pdf" target="_blank">Act 4</a></li>
+                <li><a href="assets/Keann_Act5.pdf" target="_blank">Act 5</a></li>
+                <li><a href="assets/Keann_Act6.pdf" target="_blank">Act 6</a></li>
+                <li><a href="assets/Keann_Act7.pdf" target="_blank">Act 7</a></li>
+                <li><a href="assets/Keann_Act8.pdf" target="_blank">Act 8</a></li>
+                <li><a href="assets/Keann_Act10.pdf" target="_blank">Act 10</a></li>
+                <li><a href="assets/Keann_Act11.pdf" target="_blank">Act 11</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
